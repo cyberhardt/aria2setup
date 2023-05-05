@@ -32,16 +32,16 @@ Anyway. If you're here, you probably feel just like me. Well, here's the solutio
 
 -
 
-First and foremost, create a folder called aria2 on C:\\, then create aria2.session, aria2.log, aria2.conf inside it. Then, create a folder called aria2downloads on your Downloads directory. You can, of course, set different names for the aria2 and aria2downloads folders. This was made with AriaNG Native in mind. Entire torrent section is set as comment because why would a sane person use this for torrenting.
+First and foremost, create a folder called aria2 on C:\\, then create aria2.session and aria2.log inside it. Then, create a folder called aria2downloads on your Downloads directory. You can, of course, set different names for the aria2 and aria2downloads folders. This was made with AriaNG Native in mind, for use as a download manager. I did not include torrent settings on my conf, but you can add it yourself with the links I provided. Just paste the torrent-related parameters on the conf below the #---------- part and it should be fine. After those steps, all you need to do is paste the three files of this repository inside aria2 folder, set your username on aria2.conf, and run init.bat. Provided your system drive is C, and aria2 folder is inside C as in C:\aria2, it should work right off the bat after editing the username on aria2.conf.
 
 -
 
-The .vbs allows for hidden execution, the .bat works to start the .vbs. Why both? I don't know. It worked, so I won't change it.
+The .vbs allows for hidden execution, the .bat works to start the .vbs. Why both? I don't know. It worked, so...
 
 -
 
 In order to get it to run at startup, do this:
-Create a shortcut for the initaria.bat, and place it in: "C:\Users\\-\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup".
+Create a shortcut for the init.bat, and place it in: "C:\Users\\-\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup".
 It will now execute aria2 on startup. Replace "-" by your user.
 
 -
