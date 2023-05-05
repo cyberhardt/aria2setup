@@ -1,4 +1,4 @@
-Description: How to set up aria2 for it to work as a download manager for use with AriaNG Native and other similar programs on Windows.
+Description: How to set up aria2 for it to work as a download manager for use with AriaNG Native and other similar programs on Windows, with additional browser extension.
 
 -
 
