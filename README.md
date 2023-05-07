@@ -19,7 +19,7 @@ Download AriaNG at: https://github.com/mayswind/AriaNg-Native
 
 -
 
-Download aria2 browser addon: https://github.com/jc3213/download_with_aria2
+Download With Aria2 browser addon: https://github.com/jc3213/download_with_aria2
 
 The browser addon is needed to capture downloads that otherwise wouldn't be possible with traditional copy/paste of links. The addon by jc3213 was the only one that worked amongst those I've tested. When capturing downloads with it, they are sent to aria2 and therefore can be seen and managed with AriaNG Native.
 
