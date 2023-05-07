@@ -25,6 +25,12 @@ The browser addon is needed to capture downloads that otherwise wouldn't be poss
 
 The other addons I've tested: https://addons.mozilla.org/en-US/firefox/addon/aria2-integration-extension/ (had unecessary ariang interface), https://addons.mozilla.org/en-US/firefox/addon/aria2-extension/ (didn't work), https://addons.mozilla.org/en-US/firefox/addon/aria2-integration/ (didn't work).
 
+After installing the addon, I recommend making the following changes on the Options page:
+1 - Notifications when download start and when it is complete
+2 - Enable Display Download Prompt and Download Override (you can ignore this if you'd like aria2 to download all the stuff to the same folder all the time)
+3 - Set user agent to aria2/1.36.0 or your browser's user agent
+4 - Enable both Capture Browser Downloads and Always Capture Downloads.
+
 -
 
 I couldn't find a proper guide for this anywhere. No one tells you that you need to have a .conf file for it to work. What the hell?
@@ -36,6 +42,8 @@ Anyway. If you're here, you probably feel just like me. Well, here's the solutio
 -
 
 First and foremost, create a folder called aria2 on C:\\, then create aria2.session and aria2.log inside it. Then, create a folder called aria2downloads on your Downloads directory. You can, of course, set different names for the aria2 and aria2downloads folders. This was made with AriaNG Native in mind, for use as a download manager. I did not include torrent settings on my conf, but you can add it yourself with the links I provided. Just paste the torrent-related parameters on the conf below the #---------- part and it should be fine. After those steps, all you need to do is paste the three files of this repository inside aria2 folder, set your username on aria2.conf, and run init.bat. Provided your system drive is C, and aria2 folder is inside C as in C:\aria2, it should work right off the bat after editing the username on aria2.conf.
+
+Configuration file is optimized for use as a download manager/accelerator. I don't recommend making changes to it unless you know what you are doing - aria2c.exe might not launch if the .conf file isn't properly organized. If you want to make your changes but aren't sure what the variables mean, check the Gist by user qzm I posted 2 sections above this one. Don't use it, though, as it is broken - just read it so that you know what all that stuff means.
 
 -
 
