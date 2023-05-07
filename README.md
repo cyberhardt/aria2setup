@@ -1,8 +1,11 @@
-Description: How to set up aria2 for it to work as a download manager for use with AriaNG Native and other similar programs on Windows, with additional browser extension.
+Description: How to set up aria2 for it to work as a download manager for use with programs such as AriaNG and/or with additional browser extension (on Windows).
+
+Note that the use of a frontend such as AriaNG is completely optional. By using the Download With Aria2 by jc3213 browser extension, you can already use it flawlessly and effortlessly as a download manager/accelerator without any additional software at all. With the extension, you can even get it to let you set the download location on a per-download basis, and notify you on start and completion of a download (with system notifications, not browser ones). AriaNG and similar programs have very poor performance and run on hundreds of MB of RAM, even on idle and system tray. By making use of the browser extension alone, you can get away with 3MB usage of RAM by the aria2c.exe process, which you can set to run on startup (how-to guide is down there).
 
 -
 
-Tested with: Windows 10 2H22 64-bit using AriaNG Native 1.3.4
+Tested on: Windows 10 2H22 64-bit using AriaNG Native 1.3.4 and Download with Aria2 
+4.2.4.1968 on Librewolf 111.0-3.
 
 working .conf file found on: https://github.com/RossWang/Aria2-Integration/tree/master/Bin
 
