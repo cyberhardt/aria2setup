@@ -21,7 +21,7 @@ Download AriaNG at: https://github.com/mayswind/AriaNg-Native
 
 Download With Aria2 browser addon: https://github.com/jc3213/download_with_aria2
 
-The browser addon is needed to capture downloads that otherwise wouldn't be possible with traditional copy/paste of links. The addon by jc3213 was the only one that worked amongst those I've tested. When capturing downloads with it, they are sent to aria2 and therefore can be seen and managed with AriaNG Native.
+The browser addon is needed to capture downloads that otherwise wouldn't be possible with traditional copy/paste of links. The addon by jc3213 was the only one that worked amongst those I've tested. When capturing downloads with it, they are sent to aria2 and therefore can be seen and managed with AriaNG Native, but the extension is so useful as-is that AriaNG isn't even that much of a necessity.
 
 The other addons I've tested: https://addons.mozilla.org/en-US/firefox/addon/aria2-integration-extension/ (had unecessary ariang interface), https://addons.mozilla.org/en-US/firefox/addon/aria2-extension/ (didn't work), https://addons.mozilla.org/en-US/firefox/addon/aria2-integration/ (didn't work).
 
@@ -41,13 +41,13 @@ Anyway. If you're here, you probably feel just like me. Well, here's the solutio
 
 -
 
-First and foremost, create a folder called aria2 on C:\\, then create aria2.session and aria2.log inside it. Then, create a folder called aria2downloads on your Downloads directory. You can, of course, set different names for the aria2 and aria2downloads folders. This was made with AriaNG Native in mind, for use as a download manager. I did not include torrent settings on my conf, but you can add it yourself with the links I provided. Just paste the torrent-related parameters on the conf below the #---------- part and it should be fine. After those steps, all you need to do is paste the three files of this repository inside aria2 folder, set your username on aria2.conf, and run init.bat. Provided your system drive is C, and aria2 folder is inside C as in C:\aria2, it should work right off the bat after editing the username on aria2.conf.
+First and foremost, create a folder called aria2 on C:\\, then create aria2.session and aria2.log inside it. Then, create a folder called aria2downloads on your Downloads directory. You can, of course, set different names for the aria2 and aria2downloads folders. This was made with AriaNG Native in mind, for use as a download manager. I did not include torrent settings on my .conf, but you can add it yourself with the links I provided. Just copy the torrent-related parameters to the .conf file below the #---------- part and it should be fine. After those steps, all you need to do is copy the three files of this repository to the aria2 folder, set your windows username on aria2.conf, and run init.bat. Provided your system drive is C, and aria2 folder is inside C as in C:\aria2, it should work right off the bat after editing the windows username on aria2.conf.
 
-Configuration file is optimized for use as a download manager/accelerator. I don't recommend making changes to it unless you know what you are doing - aria2c.exe might not launch if the .conf file isn't properly organized. If you want to make your changes but aren't sure what the parameters mean, check the Gist by user qzm I posted 2 sections above this one. Don't use it, though, as it is broken - just read it so that you know what all that stuff means.
+Configuration file is optimized for use as a download manager/accelerator. I don't recommend making changes to it unless you know what you are doing - aria2c.exe might not launch if the .conf file isn't properly organized. If you want to make changes to it but aren't sure what the parameters mean, check the Gist by user qzm I posted 2 sections above this one. Don't use it, though, as it is broken - just read it so that you know what all that stuff means.
 
 -
 
-The .vbs allows for hidden execution, the .bat works to start the .vbs. Why both? I don't know. It worked, so...
+The .vbs allows hidden execution, the .bat works to start the .vbs. Why both? I don't know. It worked, so...
 
 -
 
