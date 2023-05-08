@@ -31,7 +31,7 @@ The other addons I've tested: https://addons.mozilla.org/en-US/firefox/addon/ari
 
 After installing the addon, I recommend making the following changes on the Options page:
 
-1 - Notifications when download start and when it is complete
+1 - Notifications when download starts and when it is complete
 
 2 - Enable Display Download Prompt and Download Override (you can ignore this if you'd like aria2 to download all the stuff to the same folder all the time)
 
@@ -43,13 +43,13 @@ After installing the addon, I recommend making the following changes on the Opti
 
 NOTE: I couldn't find a proper guide for this anywhere. No one tells you that you need to have a .conf file for it to work. What the hell?
 Did everyone go mad? Why people offer aria2 and aria2 related programs if they don't even work without configuring them previously?
-Or, rather, considering that is true, why no one provided a FUCKING QUICKSTART GUIDE ON THIS SHIT? WHAT THE HELL, YOU FUCKING MORONS?
-DO I LOOK LIKE AN ORACLE? AM I SUPPOSED TO KNOW THAT THIS PROGRAM NEEDS MANUAL CREATION OF FOLDERS AND CONFIG FILES? HUH?
+Or, rather, with it considered, why no one provides a FUCKING QUICKSTART GUIDE ON THIS SHIT? WHAT THE HELL?
+DO I LOOK LIKE AN ORACLE? AM I SUPPOSED TO KNOW THAT THIS PROGRAM NEEDS MANUAL CREATION OF FOLDERS, CONFIG FILES AND PARAMETERS? HUH?
 Anyway. If you're here, you probably feel just like me. Well, here's the solution everyone needed but no one provided... for some reason.
 
 -
 
-First and foremost, create a folder called aria2 on C:\\, then create aria2.session, aria2.log and stat.log inside it. Then, create a folder called aria2downloads on your Downloads directory. You can, of course, set different names for the aria2 and aria2downloads folders, and put them in other locations. Again, as mentioned before, this was made for use as a download manager. I did not include torrent settings on my .conf (in fact, I explicitly disabled DHT), but you can add it yourself with the links I provided, or with the help of AriaNG. Just copy the torrent-related parameters to the .conf file, *below the #---------- part* and it should be fine. After those steps, all you need to do is copy the three files of this repository to the aria2 folder, set your windows username on aria2.conf, and run init.bat. Provided your system drive is C, and aria2 folder is inside C as in C:\aria2, it should work right off the bat after editing the windows username on aria2.conf.
+First and foremost, create a folder called aria2 on C:\\, then create aria2.session, aria2.log and stat.log inside it. Then, create a folder called aria2downloads on your Downloads directory. You can, of course, set different names for the aria2 and aria2downloads folders, and put them in other locations **(but you'll need to make sure paths on aria2.conf, init.vbs and init.bat are correct)**. Again, as mentioned before, this was made for use as a download manager. I did not include torrent settings on my .conf (in fact, I explicitly disabled DHT), but you can add it yourself with the links I provided, or with the help of AriaNG. Just copy the torrent-related parameters to the .conf file, **below the #---------- part** and it should be fine. After those steps, all you need to do is copy the three files of this repository to the aria2 folder, set your windows username on aria2.conf, and run init.bat. Provided your system drive is C, and aria2 folder is inside C as in C:\aria2, it should work right off the bat after editing the windows username on aria2.conf.
 
 Configuration file is optimized for use as a download manager/accelerator. I don't recommend making changes to it unless you know what you are doing - aria2c.exe might not launch if the .conf file isn't properly organized. If you want to make changes to it but aren't sure what the parameters mean, check the Gist by user qzm, or the aria2 manual, or AriaNG which contains explanations for the parameters as well.
 
@@ -60,9 +60,6 @@ The .vbs allows hidden execution, the .bat works to start the .vbs. Why both? I 
 -
 
 In order to get it to run at startup, do this:
+
 Create a shortcut for the init.bat, and place it in: "C:\Users\\-\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup".
 It will now execute aria2 on startup. Replace "-" by your user.
-
--
-
-IF YOUR FILES AREN'T INSIDE C:\aria2 THEY WILL NEED MANUAL ADJUSTMENT 
