@@ -30,9 +30,13 @@ The browser addon is needed to capture downloads that otherwise wouldn't be poss
 The other addons I've tested: https://addons.mozilla.org/en-US/firefox/addon/aria2-integration-extension/ (had unecessary ariang interface), https://addons.mozilla.org/en-US/firefox/addon/aria2-extension/ (didn't work), https://addons.mozilla.org/en-US/firefox/addon/aria2-integration/ (didn't work).
 
 After installing the addon, I recommend making the following changes on the Options page:
+
 1 - Notifications when download start and when it is complete
+
 2 - Enable Display Download Prompt and Download Override (you can ignore this if you'd like aria2 to download all the stuff to the same folder all the time)
+
 3 - Set user agent to be the same UA on the .conf file (currently "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101")
+
 4 - Enable both Capture Browser Downloads and Always Capture Downloads.
 
 -
