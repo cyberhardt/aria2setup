@@ -63,3 +63,7 @@ In order to get it to run at startup, do this:
 
 Create a shortcut for the init.bat, and place it in: "C:\Users\\-\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup".
 It will now execute aria2 on startup. Replace "-" by your user.
+
+-
+
+Download Accelerator function won't significantly improve download speeds in sites whose speeds are unlimited, such as Pixeldrain.
