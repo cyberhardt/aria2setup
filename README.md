@@ -25,7 +25,7 @@ Aria2 manual: https://aria2.github.io/manual/en/html/index.html
 
 "Download With Aria2" browser addon: https://github.com/jc3213/download_with_aria2
 
-The browser addon is needed to capture downloads that otherwise wouldn't be possible with traditional copy/paste of links. The addon by jc3213 was the only one that worked amongst those I've tested. When capturing downloads with it, they are sent to aria2 and therefore can be seen and managed with AriaNG Native, but the extension is so useful as-is that AriaNG isn't even that much of a necessity.
+The browser addon is needed to capture downloads that otherwise wouldn't be possible with traditional copy/paste of links. The addon by jc3213 was the only one that worked amongst those I've tested. When capturing downloads with it, they are sent to aria2 and therefore can be seen and managed with AriaNG Native, but the extension is so useful as-is that AriaNG isn't necessary.
 
 The other addons I've tested: https://addons.mozilla.org/en-US/firefox/addon/aria2-integration-extension/ (had unecessary ariang interface), https://addons.mozilla.org/en-US/firefox/addon/aria2-extension/ (didn't work), https://addons.mozilla.org/en-US/firefox/addon/aria2-integration/ (didn't work).
 
@@ -33,11 +33,11 @@ After installing the addon, I recommend making the following changes on the Opti
 
 1 - Notifications when download starts and when it is complete
 
-2 - Enable Display Download Prompt and Download Override (you can ignore this if you'd like aria2 to download all the stuff to the same folder all the time)
+2 - Set user agent to be the same UA on the .conf file (currently "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101")
 
-3 - Set user agent to be the same UA on the .conf file (currently "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101")
+3 - Enable both Capture Browser Downloads and Always Capture Downloads.
 
-4 - Enable both Capture Browser Downloads and Always Capture Downloads.
+4 - Turn on Follow Browser Behavior (needs Capture Web Requests to be turned off) so that files get downloaded to the folder you select as if you were downloading with the browser. Very useful. You can ignore this if you want your files to always be downloaded to the same folder.
 
 -
 
