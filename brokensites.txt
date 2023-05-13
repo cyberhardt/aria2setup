@@ -1,0 +1,20 @@
+This list will be updated as I use the program. It was initially supposed to be a list of sites that work, but as 99% of the sites work, it will now be a list of sites that don't work.
+
+This combination (Download With Aria2 browser extension and/or AriaNG) does not work with:
+
+1 - Workupload
+
+2 - 
+
+3 - 
+
+4 - 
+
+5 - 
+
+6 - 
+
+7 - 
+
+8 - 
+
