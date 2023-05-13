@@ -1,6 +1,6 @@
-Description: How to set up aria2 for it to work as a download manager for use with programs such as AriaNG and/or with additional browser extension (on Windows).
+Description: How to set up aria2 for it to work as a download manager for use with the Download With Aria2 browser extension and/or programs such as AriaNG (on Windows).
 
-Note that the use of a frontend such as AriaNG is completely optional. By using the Download With Aria2 by jc3213 browser extension, you can already use it flawlessly and effortlessly as a download manager/accelerator without any additional software at all. With the extension, you can even get it to let you set the download location on a per-download basis, and notify you on start and completion of a download (with system notifications, not browser ones). AriaNG and similar programs have very poor performance and run on hundreds of MB of RAM, even on idle and system tray. By making use of the browser extension alone, you can get away with 3MB usage of RAM by the aria2c.exe process, which you can set to run on startup (how-to guide is down there).
+Note that the use of a frontend such as AriaNG is completely optional. By using the Download With Aria2 by jc3213 browser extension, you can already use it flawlessly and effortlessly as a download manager/accelerator without any additional software at all. With the extension, you can even get it to let you set the download location on a per-download basis, and notify you on start and completion of a download - provided your browser is open, but the download itself will happen regardless of the browser. AriaNG and similar programs have very poor performance and run on hundreds of MB of RAM, even on idle and system tray. By making use of the browser extension alone, you can get away with 3MB usage of RAM by the aria2c.exe process, which you can set to run on startup (how-to guide is down there).
 
 I highly recommend you to read this readme in its entirety.
 
@@ -25,7 +25,7 @@ Aria2 manual: https://aria2.github.io/manual/en/html/index.html
 
 "Download With Aria2" browser addon: https://github.com/jc3213/download_with_aria2
 
-The browser addon is needed to capture downloads that otherwise wouldn't be possible with traditional copy/paste of links. The addon by jc3213 was the only one that worked amongst those I've tested. When capturing downloads with it, they are sent to aria2 and therefore can be seen and managed with AriaNG Native, but the extension is so useful as-is that AriaNG isn't necessary.
+The browser addon is needed to capture downloads that otherwise wouldn't be possible with traditional copy/paste of links. The addon by jc3213 was the only one that worked amongst those I've tested. When capturing downloads with it, they are sent to aria2 and therefore can be seen and managed with AriaNG Native, but the extension is so useful as-is that an additional frontend isn't necessary.
 
 The other addons I've tested: https://addons.mozilla.org/en-US/firefox/addon/aria2-integration-extension/ (had unecessary ariang interface), https://addons.mozilla.org/en-US/firefox/addon/aria2-extension/ (didn't work), https://addons.mozilla.org/en-US/firefox/addon/aria2-integration/ (didn't work).
 
@@ -66,4 +66,4 @@ It will now execute aria2 on startup. Replace "-" by your user.
 
 -
 
-Download Accelerator function won't significantly improve download speeds in sites whose speeds are unlimited, such as Pixeldrain.
+NOTE: Download Accelerator function won't significantly improve download speeds in sites whose speeds are unlimited, such as Pixeldrain.
