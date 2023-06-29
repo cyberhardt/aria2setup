@@ -2,11 +2,11 @@ This list will be updated as I use the program. It was initially supposed to be 
 
 This combination (Download With Aria2 browser extension and/or AriaNG) does not work with:
 
-1 - Workupload
+1 - Workupload (workupload.com); doesn't work
 
-2 - Gofile
+2 - Gofile (gofile.io); doesn't work
 
-3 - 
+3 - Mixdrop (mixdrop.co); very slow speeds and only 1 connection
 
 4 - 
 
